@@ -28,7 +28,7 @@ export default function Hero() {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (heroRef.current) {
@@ -50,7 +50,10 @@ export default function Hero() {
       {/* HEADER */}
       <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 py-3 bg-primary/80 backdrop-blur-md shadow-md">
         {/* LOGO */}
-        <button onClick={() => scrollToSection("Hero")} className="flex items-center gap-3">
+        <button
+          onClick={() => scrollToSection("Hero")}
+          className="flex items-center gap-3"
+        >
           <Image
             src="/images/MyRobot-Logo-Branca.svg"
             alt="Logo"
@@ -63,7 +66,7 @@ export default function Hero() {
         {/* LOGOMARCA + CIDADE */}
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col leading-tight items-center pointer-events-none">
           <Image
-            src="/images/MyRobot-Logomarca-Branca.svg"
+            src="/images/myrobot_logomarca_branca.svg"
             alt="Logomarca"
             width={120}
             height={40}
@@ -181,9 +184,7 @@ export default function Hero() {
           Faça com quem entende
         </h1>
 
-        <p className="mt-2 text-sm text-white/90">
-          O futuro começa aqui
-        </p>
+        <p className="mt-2 text-sm text-white/90">O futuro começa aqui</p>
 
         <button
           onClick={() => scrollToSection("Contato")}
