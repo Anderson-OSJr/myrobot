@@ -5,7 +5,7 @@ import { Phone, MessageCircle, Share2 } from "lucide-react";
 
 const faqs = [
   {
-    pergunta: "Quantas aulas aulas por semana?",
+    pergunta: "Quantas aulas por semana?",
     resposta: "Uma vez por semana. Com aulas de robótica com duração de 2 horas e empreendedorismo com duração de 1 hora.",
   },
   {
